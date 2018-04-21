@@ -16,13 +16,28 @@
 <main class="container">
     <aside class="aside mobile-default-hidden">
         <ul class="list">
-            <li><img src="./img/002-network.svg" alt="network">My workspace</li>
-            <li><img src="./img/004-star.svg" alt="star">Favorites</li>
-            <li><img src="./img/003-report.svg" alt="report">Reports</li>
+            <li>
+                <a href="#workspace">
+                    <img src="./img/002-network.svg" alt="network" />
+                    <span>My workspace</span>
+                </a>
+            </li>
+            <li>
+                <a href="#favorites">
+                    <img src="./img/004-star.svg" alt="star">
+                    <span>Favorites</span>
+                </a>
+            </li>
+            <li>
+                <a href="#reports">
+                    <img src="./img/003-report.svg" alt="report">
+                    <span>Report</span>
+                </a>
+            </li>
         </ul>
     </aside>
     <section class="content">
-        <figure class="tile key-feature">
+        <figure class="tile key-feature" id="workspace">
             <div class="image-container">
                 <img src="./img/004-message.svg" alt="message"/>
             </div>
@@ -54,7 +69,7 @@
                 <div class="year">2018</div>
             </div>
         </figure>
-        <figure class="tile actions">
+        <figure id="reports" class="tile actions">
             <h6>Your last activities</h6>
             <ul>
                 <li>
@@ -91,12 +106,12 @@
                 </li>
             </ul>
         </figure>
-        <figure class="tile key-feature">
+        <figure id="favorites" class="tile key-feature">
             <div class="image-container">
                 <img src="./img/warsawjs-logo.png" alt="warsawjs-logo"/>
             </div>
             <h6>Next Meetup</h6>
-            <p id="next-warsawjs">Next meetup is on the second Wednesday of the month</p>
+            <p id="next-warsawjs">Next meetup is on the second Wednesday of the month! You are always welcome :)</p>
         </figure>
     </section>
 </main>
