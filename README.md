@@ -39,6 +39,7 @@ WarsawJS Workshop #19 project - world management center
 ### Special tasks
 - [ ] set data on calendar tile though JS
 - [ ] make it responsive!
+- [ ] get data from API
 
 ### Keywords
 * HTML
