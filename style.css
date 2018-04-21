@@ -34,20 +34,23 @@
 .content {
     min-height: calc(100vh - 40px);
     display: inline-flex;
+    flex-flow: row wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     vertical-align: top;
     flex: 1;
-    overflow: scroll;
+    overflow: auto;
 }
 .tile {
+    /*display: flex;*/
+    /*flex-direction: column;*/
     height: 300px;
     width: 25%;
     min-width: 230px;
     max-width: 330px;
     margin: 30px;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 2px rgba(200,200,200,0.4);
@@ -65,11 +68,11 @@
 .key-feature .image-container img {
     height: 100%;
 }
-.key-feature h6 {
+.key-feature h6, .actions h6 {
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .key-feature p {
     margin: 0 20px;
@@ -81,7 +84,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
 }
 .day {
     margin-right: 15px;
@@ -112,6 +114,52 @@
     display: none;
 }
 
+.actions {
+    width: 50%;
+    flex: 1;
+    padding: 30px;
+}
+.actions ul {
+    margin: 30px 0;
+}
+.actions ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.action-container {
+    display: inline-block;
+}
+.actions .action-title {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.actions .circle {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #4c3e5f;
+    color: #f9f9f9;
+}
+.actions li button {
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #4c3e5f;
+    color: #f9f9f9;
+    border-radius: 20px;
+}
+.actions li button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 @media all and (max-width: 700px){
     .mobile-default-hidden {
         display: none;
