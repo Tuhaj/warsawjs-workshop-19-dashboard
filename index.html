@@ -3,59 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WarsawJS 19</title>
+    <title>WarsawJS Workshop #19</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header class="header">
-    <img id="menu-icon" src="./img/001-menu.svg" />
+    <img id="menu-icon" src="./img/001-menu.svg" alt="menu"/>
     <h1>Dashboard</h1>
 </header>
-<div class="container">
-    <aside class="aside mobile-default-hidden">
+<main class="container">
+    <aside class="aside">
         <ul class="list">
-            <li><img src="./img/002-network.svg">My workspace</li>
-            <li><img src="./img/004-star.svg">Favorites</li>
-            <li><img src="./img/003-report.svg">Reports</li>
+            <li><img src="./img/002-network.svg" alt="network">My workspace</li>
+            <li><img src="./img/004-star.svg" alt="star">Favorites</li>
+            <li><img src="./img/003-report.svg" alt="report">Reports</li>
         </ul>
     </aside>
     <section class="content">
-        <div class="tile key-feature">
+        <figure class="tile key-feature">
             <div class="image-container">
-               <img src="./img/004-message.svg" />
+                <img src="./img/004-message.svg" alt="message"/>
             </div>
             <h6>Share message</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel porttitor tortor, eget malesuada justo.</p>
-        </div>
-        <div class="tile key-feature">
+        </figure>
+        <figure class="tile key-feature">
             <div class="image-container">
-                <img src="./img/002-bar-chart.svg" />
+                <img src="./img/002-bar-chart.svg" alt="chart"/>
             </div>
             <h6>View stats</h6>
             <p>Vivamus elit odio, egestas non nulla eu, mattis blandit turpis. Donec sollicitudin nulla mi, quis pretium libero pretium in.</p>
-        </div>
-        <div class="tile key-feature">
+        </figure>
+        <figure class="tile key-feature">
             <div class="image-container">
-                <img src="./img/001-info.svg" />
+                <img src="./img/001-info.svg" alt="info"/>
             </div>
             <h6>Get informations</h6>
             <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-        <div class="tile calendar">
+        </figure>
+        <figure class="tile calendar">
             <div class="day">
                 22
             </div>
             <div>
                 <div class="month">
-                April
-            </div>
+                    April
+                </div>
                 <div class="year">2018</div>
             </div>
-        </div>
+        </figure>
     </section>
-</div>
-<script type="text/javascript" src="menu.js"></script>
+</main>
+<script src="menu.js"></script>
 </body>
 </html>
